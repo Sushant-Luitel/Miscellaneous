@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.left {
+  background-color: lightpink;
+}
+input {
+  max-width: 700px;
+  flex: 1;
+}
+
+.middle {
+  display: flex;
+  background-color: lightblue;
+  flex: 1;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.right {
+  width: 100px;
+  background-color: lightpink;
+}

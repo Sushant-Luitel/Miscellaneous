@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1">Hellow World 1</h1>
+    <h1 class="h2">Hellow World 2</h1>
+    <h1 class="h3">Hellow World 3</h1>
+    <h1 class="h4">Hellow World 4</h1>
+    <h1 class="h5">Hellow World 5</h1>
+    <h1 class="h6">Hellow World 6</h1>
+    <script>
+      const heading1 = document.querySelector(".h1");
+      const heading2 = document.querySelector(".h2");
+      const heading3 = document.querySelector(".h3");
+      const heading4 = document.querySelector(".h4");
+      const heading5 = document.querySelector(".h5");
+      const heading6 = document.querySelector(".h6");
+
+      setTimeout(() => {
+        heading1.innerText = "Heading 1";
+        heading1.style.color = "violet";
+        heading4.innerText = "Heading 4";
+        heading4.style.color = "pink";
+        setTimeout(() => {
+          heading2.innerText = "Heading 2";
+          heading2.style.color = "red";
+          setTimeout(() => {
+            heading3.style.color = "green";
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    </script>
+  </body>
+</html>

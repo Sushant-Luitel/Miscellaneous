@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      class="SquareDiv"
+      style="
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      "
+      value="red"
+    >
+      Red
+    </button>
+    <button
+      class="SquareDiv"
+      style="
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      "
+      value="blue"
+    >
+      Blue
+    </button>
+    <button
+      class="SquareDiv"
+      style="
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      "
+      value="green"
+    >
+      Green
+    </button>
+  </body>
+
+  <script>
+    let Square = document.querySelectorAll(".SquareDiv");
+    let timesClicked = { red: 0, blue: 0, green: 0 };
+    Square.forEach((square) => {
+      square.onclick = () => {
+        timesClicked[square.value] += 1;
+        square.innerText = timesClicked[square.value];
+      };
+    });
+  </script>
+</html>
